@@ -1,0 +1,34 @@
+name: Build React & Push Docker Image
+
+on:
+  push:
+    branches:
+      - deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Login to Docker
+        run: docker login -u alfarstudent -p ${{ secrets.DOCKER_HUB_TOKEN }}
+
+      - name: Build the Docker image
+        run: docker build . --tag alfarstudent/web-portofolio:latest
+        
+      - name: Push image to Docker Hub
+        run: docker push alfarstudent/web-portofolio:latest
