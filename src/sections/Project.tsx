@@ -4,34 +4,36 @@ import Card from "../components/Card";
 const myProjects: Project[] = [
 	{
 		id: 1,
-		title: "Aplikasi E-commerce",
+		title: "GENTA",
 		description:
-			"Platform belanja online modern yang dibangun dengan Next.js, TypeScript, dan terintegrasi dengan payment gateway.",
-		imageUrl: "https://placehold.co/600x400/000000/FFFFFF/png?text=E-commerce",
+			"Gerbang Informasi Terpadu untuk Akses Publik. Sebuah platform untuk melakukan akses layanan pemerintah yang dipandu oleh AI.",
+		imageUrl: "https://placehold.co/600x400/000000/FFFFFF/png?text=GENTA",
 		projectUrl: "#",
 	},
 	{
 		id: 2,
-		title: "Sistem Manajemen Blog",
+		title: "Ljosalfar.bot",
 		description:
-			"Sebuah CMS sederhana untuk mengelola postingan blog, dibuat menggunakan FastAPI dan React.",
-		imageUrl: "https://placehold.co/600x400/E8117F/FFFFFF/png?text=Blog+CMS",
+			"A Discord bot to help you planning schedule, reminder schedule, money managerial, just like a personal assistance through Discord",
+		imageUrl:
+			"https://placehold.co/600x400/E8117F/FFFFFF/png?text=Ljosalfar.bot",
 		projectUrl: "#",
 	},
 	{
 		id: 3,
-		title: "Aplikasi Cuaca",
+		title: "Paiwitan.AI",
 		description:
-			"Aplikasi ringan untuk menampilkan prakiraan cuaca secara real-time dari API publik.",
-		imageUrl: "https://placehold.co/600x400/3498DB/FFFFFF/png?text=Weather+App",
+			"Sebuah platform konstruksi model machine learning secara grafis dengan minim kode.",
+		imageUrl: "https://placehold.co/600x400/3498DB/FFFFFF/png?text=Paiwitan.AI",
 		projectUrl: "#",
 	},
 	{
 		id: 4,
-		title: "Portofolio Pribadi",
+		title: "Neurometheus",
 		description:
-			"Website portofolio pribadi yang Anda lihat saat ini. Dibuat dengan React dan Tailwind CSS.",
-		imageUrl: "https://placehold.co/600x400/2ECC71/FFFFFF/png?text=Portfolio",
+			"Core System of AI Combining idea of AGI, MLOps, DevOps, AutoML, and self-evolving software.",
+		imageUrl:
+			"https://placehold.co/600x400/2ECC71/FFFFFF/png?text=Neurometheus",
 		projectUrl: "#",
 	},
 ];
